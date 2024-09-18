@@ -19,7 +19,7 @@ async def main():
         # print(league_data)
         
         
-        team_ids = await client.get_teams(Sport.BASKETBALL, league)
+        team_ids = await client.get_team_ids(Sport.BASKETBALL, league)
         for team_id in team_ids:
             team_data = await client.get_team(Sport.BASKETBALL, league, team_id)
             # print(team_data)
